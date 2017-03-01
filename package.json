@@ -1,0 +1,28 @@
+{
+  "name": "js-dev-kit",
+  "version": "1.0.0",
+  "description": "JS starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -k \"npm run dev\" \"npm run db\"",
+    "dev": "lite-server",
+    "db": "json-server --watch db.json --port 3005",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/js-dev-kit.git"
+  },
+  "keywords": [],
+  "author": "MadhankumarJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/js-dev-kit/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/js-dev-kit#readme",
+  "devDependencies": {
+    "concurrently": "^3.3.0",
+    "json-server": "^0.9.5",
+    "lite-server": "^2.2.2"
+  }
+}
